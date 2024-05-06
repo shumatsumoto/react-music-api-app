@@ -1,6 +1,7 @@
+import { getToken } from "./lib/spotify";
+
 export default function App() {
-  console.log(process.env.REACT_APP_SPOTIFY_CLIENT_ID);
-  console.log(process.env.REACT_APP_SPOTIFY_CLIENT_SECRET);
+  getToken();
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       <main className="flex-1 p-8 mb-20">
